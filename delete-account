@@ -1,0 +1,35 @@
+# Delete Account and Data — Meds Tracker
+
+**App:** Meds Tracker  
+**Developer:** [Your Developer / Company Name]  
+**Support:** [support@yourdomain.com](mailto:support@yourdomain.com)
+
+> This page explains how users can request deletion of their account and all associated data.  
+> It also describes what is deleted, what may be retained temporarily, and the expected timeline.
+
+---
+
+## How to Request Account Deletion
+
+### Option A — In-App (Recommended)
+1. Open **Profile → Settings**.  
+2. Tap **Delete Account** in the fixed bottom bar.  
+3. Read the warning about the **irreversibility** of this action.  
+4. Confirm deletion.  
+
+Once confirmed, the app will:
+- Invalidate active sessions and tokens.  
+- Trigger full cascade deletion of all user data.  
+- Sign you out automatically after completion.
+
+### Option B — By Email
+Send an email from the address linked to your account to  
+**[support@yourdomain.com](mailto:support@yourdomain.com?subject=Meds%20Tracker%20-%20Account%20Deletion%20Request)**  
+with the subject **“Account Deletion Request.”**
+
+Please include:
+- Your account email address.  
+- (Optional) Your user ID (if visible in the app).  
+- (Optional) Short note confirming your request.
+
+We will verify ownership and c

@@ -1,8 +1,9 @@
 # Delete Account and Data — Meds Tracker
 
 **App:** Meds Tracker  
-**Developer:** [Your Developer / Company Name]  
-**Support:** [support@yourdomain.com](mailto:support@yourdomain.com)
+**Developer:** Vlad Vityuk
+**Support:** vlad.vityuk.apps@gmail.com
+
 
 > This page explains how users can request deletion of their account and all associated data.  
 > It also describes what is deleted, what may be retained temporarily, and the expected timeline.
@@ -24,12 +25,44 @@ Once confirmed, the app will:
 
 ### Option B — By Email
 Send an email from the address linked to your account to  
-**[support@yourdomain.com](mailto:support@yourdomain.com?subject=Meds%20Tracker%20-%20Account%20Deletion%20Request)**  
+**vlad.vityuk.apps@gmail.com(mailto:vlad.vityuk.apps@gmail.com?subject=Meds%20Tracker%20-%20Account%20Deletion%20Request)**  
 with the subject **“Account Deletion Request.”**
 
 Please include:
 - Your account email address.  
-- (Optional) Your user ID (if visible in the app).  
 - (Optional) Short note confirming your request.
 
-We will verify ownership and c
+We will verify ownership and confirm deletion.
+
+
+## What Data Is Permanently Deleted
+
+- **Firebase Authentication account** (email/password and Google OAuth).  
+- All user-related data in **Cloud Firestore**, including:
+  - `/users/{uid}` document.  
+  - Subcollections such as `/users/{uid}/medicines`, `/events`, `/settings`, etc.  
+- Any related files in **Cloud Storage**, e.g. `/users/{uid}/**`.  
+- Local offline cache and queued sync data in the app.  
+- **Firebase Cloud Messaging tokens** used for push notifications.
+
+All deletions are **irreversible**.
+
+
+## Timeline
+
+- **In-app deletion:** usually completed within **minutes**.  
+- **Email requests:** completed within **7 days** of confirmation.
+
+You will receive confirmation once the process is finished.
+
+
+## FAQ
+
+**Can I recover my account after deletion?**  
+No. Account deletion is **permanent and irreversible**.
+
+**Are my data deleted on all devices?**  
+Yes. Once server-side data are deleted, the app clears all local caches on the next startup.
+
+**Does this work with Google sign-in?**  
+Yes. The linked Firebase Auth Google account and all associated Firestore/Storage data are deleted.
